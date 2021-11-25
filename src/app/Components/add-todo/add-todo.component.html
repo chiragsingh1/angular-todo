@@ -1,0 +1,32 @@
+<div class="my-4">
+  <h3>Add a ToDo</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">ToDo Title</label>
+      <input
+        [(ngModel)]="title"
+        type="email"
+        class="form-control"
+        name="title"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">ToDo Description</label>
+      <input
+        [(ngModel)]="desc"
+        name="desc"
+        type="text"
+        class="form-control"
+        id="desc"
+      />
+    </div>
+    <button type="submit" class="btn btn-sm mb-5 btn-primary">
+      Add new ToDo
+    </button>
+  </form>
+</div>
